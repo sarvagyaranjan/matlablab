@@ -1,0 +1,16 @@
+clc;
+clear all;
+close all;
+
+
+I = imread('lena_gray.bmp', 'bmp');
+subplot(1,2,1);
+
+imshow(I);
+
+
+J = imnoise(I, 'salt & pepper' , 0.02);
+subplot(1,2,2);
+imshow(J);
+
+%filtering salt and p

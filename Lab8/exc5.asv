@@ -1,0 +1,17 @@
+clc;
+clear all;
+close all;
+
+
+I = imread('barbara_gray.bmp', 'bmp');
+
+imshow(I);
+
+BW1 = edge(I, 'sobel');
+BW2 = edge(I, 'canny');
+
+
+tiledlayout(1,2);
+
+nexttile
+imsho
